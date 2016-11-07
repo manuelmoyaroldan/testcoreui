@@ -11,6 +11,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
+import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { NAV_DROPDOWN_DIRECTIVES } from './shared/nav-dropdown.directive';
+import { SIDEBAR_TOGGLE_DIRECTIVES } from './shared/sidebar.directive';
+import { AsideToggleDirective } from './shared/aside.directive';
+import { BreadcrumbsComponent } from './shared/breadcrumb.component';
+
+
 import { TestDataService } from './services/testDataService';
 
 @NgModule({
@@ -19,12 +26,17 @@ import { TestDataService } from './services/testDataService';
         CommonModule,
         FormsModule,
         routing,
-        HttpModule
+        HttpModule,
+        Ng2BootstrapModule
     ],
     declarations: [
         AppComponent,
         AboutComponent,
-        HomeComponent
+        HomeComponent,
+        NAV_DROPDOWN_DIRECTIVES,
+        BreadcrumbsComponent,
+        SIDEBAR_TOGGLE_DIRECTIVES,
+        AsideToggleDirective
     ],
     providers: [
         TestDataService,
