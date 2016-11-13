@@ -36,7 +36,14 @@
     "chart.js": "2.3.0",
     "ng2-bootstrap": "1.1.16",
     "ng2-charts": "1.4.1",
-    "moment": "2.15.2"
+    "moment": "2.15.2",
+
+    "primeng": "^1.0.0-rc.4",
+    "font-awesome": "^4.7.0"
+
+
+
+
   },
   "devDependencies": {
     "@types/node": "^6.0.45",
@@ -59,6 +66,8 @@
     "typescript": "2.0.3",
     "url-loader": "^0.5.6",
     "webpack": "2.1.0-beta.25",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    
+    "angular2-router-loader": "^0.3.3"
   }
 }

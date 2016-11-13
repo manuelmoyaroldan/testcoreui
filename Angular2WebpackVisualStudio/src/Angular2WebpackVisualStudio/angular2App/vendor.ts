@@ -5,3 +5,6 @@
 //import './css/bootstrap-theme.css';
 
 import './scss/style.scss'; 
+ 
+
+import 'primeng/primeng';

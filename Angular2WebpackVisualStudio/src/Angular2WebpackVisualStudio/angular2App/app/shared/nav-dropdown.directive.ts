@@ -3,7 +3,7 @@ import { Directive, HostListener } from '@angular/core';
 @Directive({
     selector: '.nav-dropdown',
     host: {
-        '[class.open]': '_open',
+        '[class.open]': '_open', 
     }
 })
 export class NavDropdownDirective {

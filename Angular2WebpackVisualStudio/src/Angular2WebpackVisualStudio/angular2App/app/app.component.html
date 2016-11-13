@@ -8,18 +8,18 @@
                 <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
             </li>
             <li class="nav-item px-1">
-                <a class="nav-link" href="#">Dashboard</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item px-1">
+            <!--<li class="nav-item px-1">
                 <a class="nav-link" href="#">Users</a>
-            </li>
+            </li>-->
             <li class="nav-item px-1">
-                <a class="nav-link" href="#">Settings</a>
+                <a class="nav-link" [routerLink]="['/about']">About</a>
             </li>
         </ul>
         <ul class="nav navbar-nav float-xs-right hidden-md-down">
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
+                <a class="nav-link" [routerLink]="['/Home']"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="icon-list"></i></a>
@@ -149,7 +149,7 @@
 
     <!-- Breadcrumb -->
     <ol class="breadcrumb">
-        <!--<breadcrumbs></breadcrumbs>-->
+        <breadcrumbs></breadcrumbs> 
 
         <!-- Breadcrumb Menu-->
         <li class="breadcrumb-menu">

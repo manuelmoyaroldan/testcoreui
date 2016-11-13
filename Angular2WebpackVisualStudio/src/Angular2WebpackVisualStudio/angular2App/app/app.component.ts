@@ -1,29 +1,36 @@
-﻿import { Component, OnInit } from '@angular/core';
-
-// AoT compilation doesn't support 'require'.
-//import './app.component.scss';
-//import '../style/app.scss';
+﻿import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: 'app.component.html'
+    selector: 'body',
+    template: '<router-outlet></router-outlet>'
 })
+export class AppComponent { }
+//import { Component, OnInit } from '@angular/core';
 
-export class AppComponent implements OnInit{
-    constructor() { }
+//// AoT compilation doesn't support 'require'.
+////import './app.component.scss';
+////import '../style/app.scss';
 
-    public disabled: boolean = false;
-    public status: { isopen: boolean } = { isopen: false };
+//@Component({
+//    selector: 'my-app',
+//    templateUrl: 'app.component.html'
+//})
 
-    public toggled(open: boolean): void {
-        console.log('Dropdown is now: ', open);
-    }
+//export class AppComponent implements OnInit{
+//    constructor() { }
 
-    public toggleDropdown($event: MouseEvent): void {
-        $event.preventDefault();
-        $event.stopPropagation();
-        this.status.isopen = !this.status.isopen;
-    }
+//    public disabled: boolean = false;
+//    public status: { isopen: boolean } = { isopen: false };
 
-    ngOnInit(): void { }
-}
+//    public toggled(open: boolean): void {
+//        console.log('Dropdown is now: ', open);
+//    }
+
+//    public toggleDropdown($event: MouseEvent): void {
+//        $event.preventDefault();
+//        $event.stopPropagation();
+//        this.status.isopen = !this.status.isopen;
+//    }
+
+//    ngOnInit(): void { }
+//}
