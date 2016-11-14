@@ -67,9 +67,15 @@
 <div class="sidebar">
     <nav class="sidebar-nav">
         <ul class="nav">
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="tag tag-info">NEW</span></a>
+            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/Home']"><i class="icon-speedometer"></i> Home <span class="tag tag-info">NEW</span></a>
             </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/company']"><i class="icon-speedometer"></i> Company <span class="tag tag-info">NEW</span></a>
+            </li>-->
 
             <li class="divider"></li>
             <li class="nav-title">
@@ -120,9 +126,14 @@
             </li>
             <li class="divider"></li>
             <li class="nav-title">
-                Extras
+                Admin
             </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/company']"><i class="icon-pie-chart"></i> Company</a>
+            </li>
+
             <li class="nav-item nav-dropdown">
+
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Pages</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
